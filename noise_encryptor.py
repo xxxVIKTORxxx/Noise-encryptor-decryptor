@@ -1,7 +1,9 @@
 import numpy as np
 
+#an example of message to encode (should be string datatype)
 message = 'Just for fun tra la la'
 
+#the key variable is mutable. you need to use the same one for decoding of encoded messages (should be integer datatype (for this encoder edition))
 key = 256
 
 

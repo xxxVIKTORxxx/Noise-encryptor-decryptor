@@ -28,23 +28,14 @@ def enc(key, message):
     for k in range(0, key):
         encoded_message = encoded_message + np.random.choice(cho, 1)[0]
     """
-    def space_enc_index(key):
-        if key < len(cho) and key >= 0:
-            return key
-        elif key > len(cho):
-            return key // len(cho)
-        elif key < 0:
-            key * -1
-            if key < len(cho):
-                return key
-            elif key > len(cho):
-                return key // len(cho)"""
     #spaces amount check
     space_count = 0
     for l in encoded_message:
         if l.isspace():
             space_count+=1
     print(space_count)
+    """
+    
     return encoded_message
 
 print(enc(key, message))

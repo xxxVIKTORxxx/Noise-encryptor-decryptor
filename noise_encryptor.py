@@ -1,8 +1,8 @@
 import numpy as np
 
-message = 'CorRect mesSAge'
+message = 'Just for fun tra la la'
 
-key = 1024
+key = 256
 
 
 def enc(key, message):
@@ -10,7 +10,7 @@ def enc(key, message):
 
     alph = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     alph_low = alph.lower()
-    non_alph = r'0123456789!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+    non_alph = r'0123456789!"#$%&\'()*+,-./:;<=>?@ [\\]^_`{|}~'
     cho = []
     for a in alph:
         cho.append(a)
@@ -18,13 +18,16 @@ def enc(key, message):
         cho.append(al)
     for na in non_alph:
         cho.append(na)
+    for spaces in range(int(len(message)/np.random.choice([n for n in range(1,11)]))):
+        cho.append(' ')
 
     for l in message:
         for k in range(0, key):
             encoded_message = encoded_message + np.random.choice(cho, 1)[0]
-        encoded_message = encoded_message + l
-    encoded_message = encoded_message + np.random.choice(cho, 1)[0]
-    #space encoding is optional if you want to hide spaces, but difficult to remove it with decoding without touching a words in the message itself    
+        encoded_message = encoded_message + l 
+    for k in range(0, key):
+        encoded_message = encoded_message + np.random.choice(cho, 1)[0]
+    """
     def space_enc_index(key):
         if key < len(cho) and key >= 0:
             return key
@@ -35,8 +38,13 @@ def enc(key, message):
             if key < len(cho):
                 return key
             elif key > len(cho):
-                return key // len(cho)
-    encoded_message = encoded_message.replace(' ', cho[space_enc_index(key)])
+                return key // len(cho)"""
+    #spaces amount check
+    space_count = 0
+    for l in encoded_message:
+        if l.isspace():
+            space_count+=1
+    print(space_count)
     return encoded_message
 
 print(enc(key, message))

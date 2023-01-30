@@ -37,7 +37,8 @@ def enc(key, message):
             space_count+=1
     print(space_count)
     """
-    
+    # this version of encoder encodes message with a random amount of spaces for make it better readable after decoding 
+    #and for make the encoded message more secure the same time, while avoiding spaces vulnerability
     return encoded_message
 
 print(enc(key, message))

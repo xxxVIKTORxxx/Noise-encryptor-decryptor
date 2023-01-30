@@ -8,7 +8,7 @@ encryption example with spaces encoding:
 ![image](https://user-images.githubusercontent.com/109345462/215575964-0de00d42-a2d2-412f-823f-0fc152715e19.png)
 
 
-<br>codebreaker example:
+codebreaker example:
 ![image](https://user-images.githubusercontent.com/109345462/215572121-9ec6cb7a-fef5-4dd7-bcd4-e3a83bd6bf97.png)
 ![image](https://user-images.githubusercontent.com/109345462/215572231-4ab49f3f-54fc-4087-b8a5-41dbc9b8c78c.png)
 

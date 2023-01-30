@@ -8,6 +8,6 @@ endlim = 1000
 def codebreaker(msg, startlim, endlim):
     encmsg = str(msg)
     for key in range(startlim,endlim):
-        print(encmsg[key::key+1])
+        print("{} result: {}".format(key, encmsg[key::key+1]))
 
-codebreaker(msg)
+codebreaker(msg, 1, 1000)

@@ -36,23 +36,22 @@ def enc(key, message, spaces_count, spaces_method):
         encoded_message = encoded_message.replace(' ', np.random.choice(cho))
     
     #spaces count (optional)
+    space_count = 0
     if spaces_count == True:
-        space_count = 0
         for l in encoded_message:
             if l.isspace():
                 space_count+=1
-        print(space_count)
+        print('Spaces: {}'.format(space_count))
     else: 
         pass
 
     return encoded_message
 
-print(enc(key, message, spaces_count = False, spaces_method = 'spaces_noise'))
+print(enc(key, message, spaces_count = False, spaces_method = 'spaces_encode'))
 
 
 def decoder(encoded_message, key):
     encmsg = str(encoded_message)
     return print(encmsg[key::key+1])
 
-#decoding check
 decoder(enc(key, message, spaces_count = True, spaces_method = 'spaces_encode'), key)

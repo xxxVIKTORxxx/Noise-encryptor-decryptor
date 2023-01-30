@@ -10,4 +10,4 @@ def codebreaker(msg, startlim, endlim):
     for key in range(startlim,endlim):
         print("{} result: {}".format(key, encmsg[key::key+1]))
 
-codebreaker(msg, 1, 1000)
+codebreaker(msg, startlim, endlim)

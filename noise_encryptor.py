@@ -54,4 +54,5 @@ def decoder(encoded_message, key):
     encmsg = str(encoded_message)
     return print(encmsg[key::key+1])
 
+#decoding check
 decoder(enc(key, message, spaces_count = True, spaces_method = 'spaces_encode'), key)

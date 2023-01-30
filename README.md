@@ -1,8 +1,12 @@
 # Noise-encryptor-decryptor
 A random noise encryptor/decryptor | steganography|cryptography
 
-encryption example:
-![image](https://user-images.githubusercontent.com/109345462/215571912-e083a6a2-7f0d-4b5e-9d29-f60f79a20773.png)
+encryption example with spaces noise and spaces count:
+![image](https://user-images.githubusercontent.com/109345462/215575509-c68bff65-73ca-41ec-a90f-0ea9a6c34858.png)
+
+encryption example with spaces encoding:
+![image](https://user-images.githubusercontent.com/109345462/215575964-0de00d42-a2d2-412f-823f-0fc152715e19.png)
+
 
 codebreaker example:
 ![image](https://user-images.githubusercontent.com/109345462/215572121-9ec6cb7a-fef5-4dd7-bcd4-e3a83bd6bf97.png)

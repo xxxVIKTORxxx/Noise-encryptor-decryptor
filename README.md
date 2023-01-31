@@ -14,3 +14,6 @@ codebreaker example:
 
 with regex search:
 ![image](https://user-images.githubusercontent.com/109345462/215572391-f63b26e5-dd20-44ca-9c2f-3b1e6531fee8.png)
+
+with regex for encoding without numeric and special symbols:
+![image](https://user-images.githubusercontent.com/109345462/215714931-e16f8a2b-b196-44a9-80f5-e3de38c6f6f2.png)

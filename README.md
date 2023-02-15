@@ -17,3 +17,8 @@ with regex search:
 
 with regex for encoding without numeric and special symbols (key 128):
 ![image](https://user-images.githubusercontent.com/109345462/215714931-e16f8a2b-b196-44a9-80f5-e3de38c6f6f2.png)
+
+____
+in plans:
+* Add a full-words-dictionary for different languages for searching a met of words
+* Add a two-level encryption like with ceaser-chipser before the noise-encoder, and the same for decoder

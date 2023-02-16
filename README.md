@@ -22,3 +22,6 @@ ____
 in plans:
 * Add a full-words-dictionary for different languages for searching a met of words
 * Add a two-level encryption like with ceaser-chipser before the noise-encoder, and the same for decoder
+
+___
+* Inplement this for steganography with pics/images files, music/sound files, etc
